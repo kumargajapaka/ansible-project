@@ -12,6 +12,7 @@ vault_password*
 .vault_pass*
 secrets.yml
 secrets.yaml
+*.devcontainer
 
 # Ansible temporary files
 *.retry
