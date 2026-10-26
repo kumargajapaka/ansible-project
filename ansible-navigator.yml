@@ -1,0 +1,18 @@
+---
+ansible-navigator:
+  mode: stdout
+
+  execution-environment:
+    enabled: true
+    container-engine: podman
+    image: registry.redhat.io/ansible-automation-platform-26/ee-supported-rhel9:latest
+    pull:
+      policy: missing
+
+  ansible:
+    inventory:
+      entries:
+        - ./inventory.ini
+
+  playbook-artifact:
+    enable: false

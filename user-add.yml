@@ -1,0 +1,11 @@
+---
+  - name: creating some users across the servers
+    hosts: webservers
+    become: true
+    tasks:
+      - name: creating hank user
+        ansible.builtin.user:
+          name: hank
+          state: present
+          shell: /bin/bash
+          create_home: true
